@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+}
+#navbar{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 80px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: black;
+    display:flex;
+    color: white;
+   /* justify-content: space-around; */
+}
+#navbar>div>img{
+  height: 40px;
+  width: 100px;
+  margin-top: 16px;
+}
+#navbar>#Navmenu{
+   display: grid;
+   grid-template-columns: repeat(5,1fr);
+   width: 60%;
+   height: 100%;
+   /* border: 1px solid red; */
+   margin-left: 50px;
+    justify-content: space-evenly;
+}
+#navbar>#Navmenu>div{
+    margin-top: 25px
+}
+#navbar>#NavIcons{
+     width: 30%;
+     height: 100%;
+     /* border: 1px solid blue; */
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+     
+}
+#navbar>#NavIcons>span{
+  /* justify-content: space-evenly */
+  margin-top: 25px;
+  height: 25px;
+  width: 25px;
+
+}
+
+
+.bg-modal {
+	background-color: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-contents {
+	height: 300px;
+	width: 500px;
+	background-color: #353F5E;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	border-radius: 4px;
+  color: white;
+}
+
+input {
+	margin: 15px auto;
+	display: block;
+	width: 50%;
+	padding: 8px;
+	border: 1px solid gray;
+}
+
+.modal-contents>.close {
+	width: 100%;
+  height: 60px;
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: space-between; 
+}
+.close>div:nth-child(2){
+  cursor: pointer;
+}
+.close>div:nth-child(1){
+  margin-top: 40px;
+  margin-left: 5px;
+}
+.modal-contents>form{
+  width: 100%;
+  height: 70%;
+  /* border: 1px solid red; */
+  
+}
+.modal-contents>form>h4{
+  margin-left: -150px;
+  margin-top: 25px
+}
+.modal-contents>form>input{
+  width: 60%;
+  margin-left: 27px;
+}
+.modal-contents>form>p{
+  margin-left: -210px;
+  font-weight: 100;
+  margin-top: 5px
+}
+.modal-contents>form>button{
+  width: 90%;
+  color: white;
+  background-color: black;
+  height:40px;
+  margin-top: 39px
+
+}

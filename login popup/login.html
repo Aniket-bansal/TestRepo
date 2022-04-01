@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="login.css"/>
+</head>
+<body>
+    <div id="navbar">
+        <div><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1606295435/staging/Home/Images/bodywise-logo.png" alt=""/></div>
+         <div id="Navmenu">
+           <div>Book Doctor Consultation</div>
+           <div>Take Wellness Assessment</div>
+           <div>Choose Concern<span><i class="fa-solid fa-angle-down"></i></span></div>
+           <div>All Products</div>
+           <div>Refer & Earn</div>
+       </div>
+    
+       <div id="NavIcons">
+        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        <span id="button"><i class="fa-solid fa-user"></i></span>
+        <span><i class="fa-brands fa-whatsapp"></i></span>
+        <span><i class="fa-solid fa-bag-shopping"></i></span>
+       </div>
+      
+     
+       </div>
+
+
+       <div class="bg-modal">
+        <div class="modal-contents">
+      
+          <div class="close">
+            
+            <div>Login or Signup</div>
+            <div>x</div>
+          </div>
+        
+      
+          <form a ction="">
+            <h4>Enter your phone number to verify yourself</h4>
+            <input type="email" placeholder="Enter Phone Number">
+            <p>We will send OTP on this number</p>
+
+            <button>Submit</button>
+          </form>
+      
+        </div>
+      </div>
+</body>
+</html>
+
+<script>
+  document.getElementById('button').addEventListener("click", function() {
+	document.querySelector('.bg-modal').style.display = "flex";
+});
+
+document.querySelector('.close').addEventListener("click", function() {
+	document.querySelector('.bg-modal').style.display = "none";
+});
+</script>
